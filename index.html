@@ -1,16 +1,8 @@
-
 <html>
 <head>
-  <meta name="description" content="QR Code scanner" />
-  <meta name="keywords" content="qrcode,qr code,scanner,barcode,javascript" />
-  <meta name="language" content="English" />
-  <meta name="copyright" content="Lazar Laszlo (c) 2011" />
-  <meta name="Revisit-After" content="1 Days"/>
-  <meta name="robots" content="index, follow"/>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Web QR</title>
-
+  <title>二维码识别</title>
 <style type="text/css">
 body{
     width:100%;
@@ -81,10 +73,9 @@ img{
 #result{
     border: solid;
 	border-width: 1px 1px 1px 1px;
-	padding:20px;
-	width:70%;
+	width: 324.8px;
+	height: 244.8px;
 }
-
 ul{
     margin-bottom:0;
     margin-right:40px;
@@ -100,56 +91,54 @@ li a{
     text-decoration: none;
     color: black;
 }
-
 #footer a{
 	color: black;
 }
 .tsel{
     padding:0;
 }
-
 </style>
-
 <script type="text/javascript" src="llqrcode.js"></script>
 <script type="text/javascript" src="webqr.js"></script>
-
-
 </head>
-
 <body>
-<div id="main">
-<div id="header">
-<div style="position:relative;top:+20px;left:0px;"><g:plusone size="medium"></g:plusone></div>
-<p id="mp1">
-QR Code scanner
-</p>
+	<div id="main">
+		<div id="header">
+			<div style="position:relative;top:+20px;left:0px;"><g:plusone size="medium"></g:plusone></div>
+		</div>
 
-</div>
-<div id="mainbody">
-<table class="tsel" border="0" width="100%">
-<tr>
-<td valign="top" align="center" width="50%">
-<table class="tsel" border="0">
-<tr>
-<td><img class="selector" id="webcamimg" src="vid.png" onclick="setwebcam()" align="left" /></td>
-<td><img class="selector" id="qrimg" src="cam.png" onclick="setimg()" align="right"/></td></tr>
-<tr><td colspan="2" align="center">
-<div id="outdiv">
-</div></td></tr>
-</table>
-</td>
-</tr>
-<tr><td colspan="3" align="center">
-<img src="down.png"/>
-</td></tr>
-<tr><td colspan="3" align="center">
-<div id="result"></div>
-</td></tr>
-</table>
-
-</div>&nbsp;</div>
-<canvas id="qr-canvas" width="800" height="600"></canvas>
-<script type="text/javascript">load();</script>
+		<div id="mainbody">
+			<table class="tsel" border="0" width="100%">
+				<tr>
+					<td valign="top" align="center" width="50%">
+						<table class="tsel" border="0">
+							<tr>
+								<td><img class="selector" id="webcamimg" src="vid.png" onclick="setwebcam()" align="left" /></td>
+								<td><img class="selector" id="qrimg" src="cam.png" onclick="setimg()" align="right"/></td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center">
+									<div id="outdiv">
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+					<img src="down.png"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<div id="result"></div>
+					</td>
+				</tr>
+			</table>
+			
+			<canvas id="qr-canvas" width="800" height="600"></canvas>
+			
+			<script type="text/javascript">load();</script>
 </body>
-
 </html>

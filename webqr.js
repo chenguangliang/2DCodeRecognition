@@ -11,8 +11,8 @@ var moz=false;
 var v=null;
 
 var imghtml='<div id="qrfile"><canvas id="out-canvas" width="320" height="240"></canvas>'+
-    '<div id="imghelp">drag and drop a QRCode here'+
-	'<br>or select a file'+
+    '<div id="imghelp">拖拽一个二维码'+
+	'<br>或选择一个文件'+
 	'<input type="file" onchange="handleFiles(this.files)"/>'+
 	'</div>'+
 '</div>';
@@ -186,7 +186,7 @@ function setwebcam()
 function setwebcam2(options)
 {
 	console.log(options);
-	document.getElementById("result").innerHTML="- scanning -";
+	document.getElementById("result").innerHTML="- 扫描中 -";
     if(stype==1)
     {
         setTimeout(captureToCanvas, 500);    
